@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*mobile first*/
+@media screen and (max-width:768px){
+    li{
+        padding-top: 7px;
+        text-align: center;
+        width: 100vw;
+        height: 40px;
+        background-color: silver;
+        color: black;
+        display: block;
+    }
+    #icon{
+        display: block;
+        text-align: center;
+        background-color: rgb(70, 69, 69);
+        color: white;
+    }
+}

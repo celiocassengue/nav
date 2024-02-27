@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+</head>
+<body onresize="tamanho()">
+    <main>
+        <header>
+        <h1>Meu site</h1>
+        <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">&#xe5d2;</span>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#"></a>Opção 1</li>
+                    <li><a href="#"></a>Opção 2</li>
+                    <li><a href="#"></a>Opção 3</li>
+                    <li><a href="#"></a>Opção 4</li>
+                    <li><a href="#"></a>Opção 5</li>
+                </ul>
+            </menu>
+        </header>
+        <article>
+            <h2>Testando Media queries </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt quidem aspernatur accusamus cupiditate facilis molestiae dolorem vero, optio voluptates quibusdam id, quod non corrupti incidunt officia odit sequi excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt quidem aspernatur accusamus cupiditate facilis molestiae dolorem vero, optio voluptates quibusdam id, quod non corrupti incidunt officia odit sequi excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt quidem aspernatur accusamus cupiditate facilis molestiae dolorem vero, optio voluptates quibusdam id, quod non corrupti incidunt officia odit sequi excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt quidem aspernatur accusamus cupiditate facilis molestiae dolorem vero, optio voluptates quibusdam id, quod non corrupti incidunt officia odit sequi excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sunt quidem aspernatur accusamus cupiditate facilis molestiae dolorem vero, optio voluptates quibusdam id, quod non corrupti incidunt officia odit sequi excepturi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, neque? Eum voluptas omnis rerum et quisquam, explicabo amet eligendi harum excepturi iste dolor non magnam quasi accusamus placeat. Eligendi, vero?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+  if (menu.style.display == 'block'){
+    menu.style.display = 'none'
+  }
+  else{
+    menu.style.display = 'block'
+  }
+}
+        function tamanho() {
+    if(window.innerWidth >= 768){
+        menu.style.display = 'block'
+    }
+    else{
+        menu.style.display = 'none'
+    }
+}
+    </script>
+</body>
+</html>
